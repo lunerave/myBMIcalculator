@@ -27,8 +27,9 @@
                 android:textSize="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BMI :"/>
+                android:text="BMI : "/>
             <TextView
+                android:textColor="@color/black"
                 android:textSize="40dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,8 +49,9 @@
                 android:textSize="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Result :" />
+                android:text="Result : " />
             <TextView
+                android:textColor="@color/black"
                 android:textSize="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,6 +59,17 @@
                 android:text="" />
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/ic_baseline_sentiment_very_satisfied_24"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,4 +79,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
