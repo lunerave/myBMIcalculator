@@ -18,8 +18,14 @@ class MainActivity : AppCompatActivity() {
 
         resultButton.setOnClickListener {
 
-            if(heightEditText.text.isEmpty() || weightEditText.text.isEmpty()) {
-                Toast.makeText(this, "All blanks should be filled in.", Toast.LENGTH_SHORT).show()
+            if(heightEditText.text.isEmpty() && weightEditText.text.isEmpty()) {
+                Toast.makeText(this, "Please fill in your height and weight.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }else if(weightEditText.text.isEmpty()){
+                Toast.makeText(this, "Please fill in your weight.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }else if(heightEditText.text.isEmpty()){
+                Toast.makeText(this, "Please fill in your height.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 

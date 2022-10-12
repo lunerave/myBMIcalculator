@@ -19,10 +19,10 @@ class ResultActivity : AppCompatActivity() {
 
         val bmi = round((weight / (height / 100.0).pow(2.0))*10)/10
         val resultText = when{
-            bmi >= 23 ->
-                "Overweight"
+            bmi >= 23 -> "Overweight"
 
             bmi >= 18.5 -> "Normal"
+
             else -> "Underweight"
         }
 
